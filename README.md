@@ -1,5 +1,11 @@
 # TexToTo  
 
+
+
+
+<img src="TexToTo/TexToTo.jpg" alt="TexToTo />
+
+
 **Clone and run for a quick way to see TexToTo in action.**
 
 This is a minimal Text Editor application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation. And the Official Quill Themes here (https://quilljs.com/docs/themes/)
