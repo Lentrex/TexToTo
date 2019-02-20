@@ -1,9 +1,6 @@
 # TexToTo  
 
-
-
-
-<img src="TexToTo/TexToTo.jpg" alt="TexToTo />
+![Screenshot](https://github.com/Lentrex/TexToTo/blob/master/TexToTo.jpg)
 
 
 **Clone and run for a quick way to see TexToTo in action.**
