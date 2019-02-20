@@ -1,19 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="quill/quill.bubble.css" />
+
+</head>
+
+<body>
+    <header id="titlebar">
+        <div id="drag-region">
+            <div id="window-controls">
+                <div class="button" id="min-button">
+                    <span>&#xE921;</span>
+                </div>
+                <div class="button" id="max-button">
+                    <span>&#xE922;</span>
+                </div>
+                <div class="button" id="restore-button">
+                    <span>&#xE923;</span>
+                </div>
+                <div class="button" id="close-button">
+                    <span>&#xE8BB;</span>
+                </div>
+            </div>
+            <div id="window-title">
+                <span>Lentrex | TexToTo </span>
+            </div>
+        </div>
+        <!-- THIS IS WAS THE HEADER BUTTONS -->
+
+
+        <style>
+            .standalone-container {
+                max-width: auto;
+            }
+            
+            #bubble-container {
+                height: auto;
+                color: #000000;
+                margin: auto;
+                /*ezfezfezfezf*/
+            }
+        </style>
+    </header>
+
+
+    <div id="main">
+        <!--   <h1>Hello World!</h1>  -->
+        <div class="standalone-container">
+            <div id="drag-region">
+                <div id="bubble-container"></div>
+            </div>
+        </div>
+
+    </div>
+
+
 
     <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
+        window.$ = window.jQuery = require('jquery');
     </script>
-  </body>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!-- <script  src="/Contact_List/js/index.js"></script> -->
+
+
+    <script src="quill.min.js"></script>
+
+    <script>
+        // This is  QUILLLL Bubble
+        var quill = new Quill('#bubble-container', {
+            placeholder: 'HAPPY WRITING ...',
+            theme: 'bubble'
+        });
+    </script>
+    <script>
+        // You can also require other files to run in this process
+        require('./renderer.js')
+    </script>
+
+
+
+
+</body>
+
 </html>
